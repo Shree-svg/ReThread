@@ -1,0 +1,134 @@
+.sell-page {
+  padding: 8rem var(--spacing-lg) 4rem;
+}
+
+.sell-layout {
+  display: grid;
+  grid-template-columns: 1fr 450px;
+  gap: var(--spacing-lg);
+  align-items: start;
+}
+
+.sell-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.sell-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  opacity: 0.6;
+  margin-bottom: 4rem;
+}
+
+.form-group-custom {
+  margin-bottom: 2.5rem;
+}
+
+.label-gallery {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 0.75rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.upload-zone {
+  background: var(--surface-low);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--outline);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-zone:hover {
+  background: var(--surface-high);
+}
+
+.upload-zone span {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.input-archive, .select-archive, .textarea-archive {
+  width: 100%;
+  background: var(--surface-low);
+  border: none;
+  border-bottom: 2px solid var(--outline-variant);
+  color: var(--on-surface);
+  padding: 1rem;
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  outline: none;
+  transition: all 0.3s var(--transition-premium);
+}
+
+.input-archive:focus, .select-archive:focus, .textarea-archive:focus {
+  border-bottom-color: var(--primary);
+  background: var(--surface-high);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.preview-sticky {
+  position: sticky;
+  top: 8rem;
+}
+
+.preview-card-large {
+  background: var(--surface-low);
+  padding: 1.5rem;
+}
+
+.preview-img-wrap {
+  aspect-ratio: 1;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.preview-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price-tag {
+  display: block;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin: 1rem 0;
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.preview-desc {
+  font-family: var(--font-serif);
+  line-height: 1.6;
+  opacity: 0.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.tag-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .sell-layout {
+    grid-template-columns: 1fr;
+  }
+  .preview-section {
+     display: none;
+  }
+}
