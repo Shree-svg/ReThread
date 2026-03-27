@@ -1,7 +1,9 @@
 {
   "name": "rethread",
-  "private": true,
   "version": "0.1.0",
+  "description": "A high-fidelity editorial and commerce React application for archival clothing and conceptual fashion.",
+  "author": "Shree-svg",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
