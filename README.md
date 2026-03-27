@@ -2,6 +2,10 @@
 
 A high-fidelity editorial and commerce React application designed for archival clothing and conceptual fashion. Built with React and Vite, ReThread mirrors a premium design prototype with meticulous attention to detail, typography, and interactive user experience.
 
+## 📖 About
+
+ReThread was created as a sophisticated digital platform that blurs the line between a high-end fashion magazine and an exclusive e-commerce experience. Through a carefully curated UI and smooth client-side interactions, it allows users to discover, collect, and trade archival fashion pieces. The project emphasizes visual excellence, featuring dynamic layouts inspired by modern editorial design.
+
 ## ✨ Features
 
 - **Editorial Experiences**: Immersive content pages including a *Manifesto*, *Journal*, and *Lookbook* featuring rich typography and high-fidelity imagery.
