@@ -189,13 +189,23 @@ const initialMockProducts = [
 ];
 
 function Navigation({ cartCount, wishlistCount }) {
+  const [menuOpen, setMenuOpen] = useState(false);
   const location = useLocation();
   const isActive = (path) => location.pathname === path || (path !== '/' && location.pathname.startsWith(path));
 
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
+
   return (
-    <header className="header-nav">
+    <header className={`header-nav ${menuOpen ? 'menu-open' : ''}`}>
       <Link to="/" className="brand-link">ReThread</Link>
-      <nav className="nav-links">
+      
+      <button className="mobile-menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? '✕' : '☰'}
+      </button>
+
+      <nav className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
         <Link to="/" className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}>Home</Link>
         <Link to="/shop" className={`nav-link ${isActive('/shop') ? 'active' : ''}`}>Shop</Link>
         <Link to="/lookbook" className={`nav-link ${isActive('/lookbook') ? 'active' : ''}`}>Lookbook</Link>

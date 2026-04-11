@@ -178,3 +178,73 @@ h1, h2, h3, .display-text {
   color: var(--primary);
   font-style: normal;
 }
+
+/* Mobile Menu Button - Hidden by default */
+.mobile-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--on-surface);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+  }
+
+  .mobile-menu-toggle {
+    display: block;
+    z-index: 102;
+    margin-left: auto;
+    margin-right: 1.5rem;
+  }
+
+  .header-nav {
+    padding: 1.25rem 1rem;
+    flex-wrap: wrap;
+  }
+
+  .brand-link {
+    font-size: 1.25rem;
+  }
+
+  /* Full screen mobile menu overlay */
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--surface);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: transform 0.4s var(--transition-premium), opacity 0.4s ease;
+    z-index: 101;
+    pointer-events: none;
+  }
+
+  .nav-links.is-open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+  }
+
+  /* Adjust actions z-index to stay visible */
+  .nav-actions {
+    position: relative;
+    z-index: 102;
+  }
+}
