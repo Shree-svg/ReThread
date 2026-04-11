@@ -1,47 +1,129 @@
-# ReThread
+# 🧵 ReThread
 
 A high-fidelity editorial and commerce React application designed for archival clothing and conceptual fashion. Built with React and Vite, ReThread mirrors a premium design prototype with meticulous attention to detail, typography, and interactive user experience.
 
+---
+
+## 🌐 Live Demo
+
+👉 **Visit Website:** https://re-thread-qeng.vercel.app/ 
+
+---
+
 ## 📖 About
 
-ReThread was created as a sophisticated digital platform that blurs the line between a high-end fashion magazine and an exclusive e-commerce experience. Through a carefully curated UI and smooth client-side interactions, it allows users to discover, collect, and trade archival fashion pieces. The project emphasizes visual excellence, featuring dynamic layouts inspired by modern editorial design.
+ReThread was created as a sophisticated digital platform that blurs the line between a high-end fashion magazine and an exclusive e-commerce experience. Through a carefully curated UI and smooth client-side interactions, it allows users to discover, collect, and trade archival fashion pieces.
+
+The project emphasizes **visual storytelling, performance, and clean architecture**, inspired by modern editorial design systems.
+
+---
 
 ## ✨ Features
 
-- **Editorial Experiences**: Immersive content pages including a *Manifesto*, *Journal*, and *Lookbook* featuring rich typography and high-fidelity imagery.
-- **Interactive Commerce**: Full-fledged shopping workflow with *Shop*, *Sell*, *Product Details*, *Cart*, and *Wishlist* pages.
-- **Archival Focus**: A curated design system optimized for premium streetwear and archival fashion pieces.
-- **Client-Side State**: Seamless navigation via `react-router-dom` and persistent client-side state management.
+- **Editorial Experiences**  
+  Immersive content pages including *Manifesto*, *Journal*, and *Lookbook* with rich typography and layouts.
 
-## 🛠️ Tech Stack
+- **Interactive Commerce**  
+  Complete shopping workflow:
+  - Shop
+  - Sell
+  - Product Details
+  - Cart
+  - Wishlist
 
-- **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
-- **Routing**: [React Router v7](https://reactrouter.com/)
-- **Styling**: Vanilla CSS (CSS Modules & Global variables tailored for premium UX)
-- **Tooling**: ESLint, Node.js
+- **Dynamic Routing**  
+  Parameterized routes like `/product/:id` and `/archivist/:handle`
 
-## 🚀 Quick Start
+- **Client-Side State Management**  
+  Persistent state using `localStorage` with React Hooks
 
-1. **Install dependencies**
-   ```bash
-   npm install
-   ```
-2. **Run the development server**
-   ```bash
-   npm run dev
-   ```
-3. **Build for production**
-   ```bash
-   npm run build
-   ```
+- **Premium UI/UX**  
+  Smooth transitions, clean typography, and design consistency
 
-## 📂 Project Structure
-
-- `src/pages/` - Core routing and page components (Home, Shop, Cart, Manifesto, etc.)
-- `src/App.jsx` - Root application component and router configuration.
-- `src/index.css` - Global design system tokens and utilities.
-- `public/` - Static assets including custom SVG icons and favicons.
+---
 
 ## 🏗️ Architecture
 
-👉 [View Architecture](./docs/architecture.html)
+Explore the full interactive system design:
+
+👉 [View Architecture Diagram](./docs/architecture.html)
+
+### 🧩 Architecture Overview
+
+- Single Page Application (SPA)
+- Global state lifted to `App.jsx`
+- Props-based state sharing
+- Persistent storage via `localStorage`
+- Component-driven architecture
+- React Virtual DOM optimization
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React 19 + Vite
+- 🔀 React Router v7
+- 🎨 Vanilla CSS (custom design system)
+- 💾 LocalStorage (state persistence)
+- 🧹 ESLint + Node.js
+
+---
+
+## 📂 Project Structure
+
+ReThread/
+├── src/
+│   ├── pages/
+│   ├── components/
+│   ├── App.jsx
+│   └── main.jsx
+├── docs/
+│   └── architecture.html
+├── public/
+├── package.json
+└── README.md
+
+---
+
+## 🔄 State Management
+
+- Centralized state in `App.jsx`
+- Managed using:
+  - `useState`
+  - `useEffect`
+- Routing hooks:
+  - `useParams`
+  - `useNavigate`
+- Data persisted using `localStorage`
+
+---
+
+## 🎯 Key Highlights
+
+- 📌 High-fidelity UI inspired by editorial design  
+- 📌 Real-world e-commerce flow implementation  
+- 📌 Optimized rendering using React Virtual DOM  
+- 📌 Clean, scalable component architecture  
+
+---
+
+## 🚀 Future Improvements
+
+- 🔐 Authentication (Login/Signup)
+- 🌐 Backend integration (Node.js / Firebase)
+- 💳 Payment gateway integration
+- 📦 Order management system
+- 📊 Admin dashboard
+
+---
+
+## 👨‍💻 Author
+
+**Shreedhar (Shree-svg)**  
+GitHub: https://github.com/Shree-svg
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
