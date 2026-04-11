@@ -41,3 +41,7 @@ ReThread was created as a sophisticated digital platform that blurs the line bet
 - `src/App.jsx` - Root application component and router configuration.
 - `src/index.css` - Global design system tokens and utilities.
 - `public/` - Static assets including custom SVG icons and favicons.
+
+## 🏗️ Architecture
+
+👉 [View Architecture](./docs/architecture.html)
