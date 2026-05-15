@@ -168,7 +168,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## 👥 Authors
 
-This was an equal collaboration — conceived together, pair-programmed throughout, and pushed from one machine (standard in collab projects).
+This was an equal collaboration — conceived together, pair-programmed throughout, and **pushed from one machine**.
 
 <table>
   <tr>
